@@ -21,6 +21,18 @@ weekdays = {
 
 
 def return_day(number: int):
+    """_summary_
+
+    Args:
+        number (int): _description_
+
+    Returns:
+        _type_: _description_
+    >>> return_day(1)
+    'Sunday'
+    >>> return_day(45564)
+
+    """
     if number in weekdays:
         return weekdays[number]
     return None

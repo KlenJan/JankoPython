@@ -7,6 +7,17 @@ partition([1,2,3,4], isEven) # [[2,4],[1,3]]
 
 
 def partition(input_list, callback):
+    """_summary_
+
+    Args:
+        input_list (_type_): _description_
+        callback (function): _description_
+
+    Returns:
+        _type_: _description_
+    >>> partition([1,2,3,4], isEven)
+    [[2, 4], [1, 3]]
+    """
     return [[x for x in input_list if callback(x)], [x for x in input_list if not callback(x)]]
 
 
